@@ -6,14 +6,13 @@ from aiogram.filters import Command
 
 API_TOKEN = '8074629111:AAEfcNmRRDAW29K4EjOnBv3ae3js16JsKEE'
 
-# Настройка логирования
+
 logging.basicConfig(level=logging.INFO)
 
-# Инициализация бота и диспетчера
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
-# Списки жанров и книг
+
 genres_books = {
     "📚 Фантастика": [
         {"Название": "1984", "Ссылка": "https://mybook.ru/author/dzhordzh-oruell/1984/read/"},
@@ -52,7 +51,7 @@ genres_books = {
     ]
 }
 
-# Создаём клавиатуру для выбора жанра
+
 genre_keyboard = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text=genre, callback_data=f"genre_{genre}")] for genre in genres_books.keys()
