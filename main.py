@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 
-API_TOKEN = '8074629111:AAEfcNmRRDAW29K4EjOnBv3ae3js16JsKEE'
+API_TOKEN = '7532045127:AAEGhsE9rREBatgr3bPzgpeCQlab5HWIyQc'
 
 
 logging.basicConfig(level=logging.INFO)
